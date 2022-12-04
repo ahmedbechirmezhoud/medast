@@ -3,6 +3,6 @@
 
 
 ##software architecture 
-![software architecture](https://github.com/[username]/[reponame]/blob/[branch]/software-architecture.jpg?raw=true)
+![software architecture](https://github.com/[username]/[reponame]/blob/[branch]/software-architecture.png?raw=true)
 
 
