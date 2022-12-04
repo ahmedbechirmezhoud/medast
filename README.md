@@ -4,6 +4,6 @@
 
 ## software architecture 
 
-![software architecture](https://github.com/[username]/[reponame]/blob/[branch]/software-architecture.png?raw=true)
+![software architecture](https://github.com/ahmedbechirmezhoud/medast/blob/main/software-architecture.png?raw=true)
 
 
