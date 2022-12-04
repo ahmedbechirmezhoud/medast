@@ -1,0 +1,34 @@
+<head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <link
+  rel="stylesheet"
+  href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+  integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+  crossorigin="anonymous"
+/>
+    <meta
+      name="description"
+      content="Web site created using create-react-app"
+    />
+    <link rel="apple-touch-icon" href="/logo192.png" />
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="/manifest.json" />
+    <!--
+      Notice the use of  in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>React App</title>
+  <script defer src="/static/js/bundle.js"></script></head>
+
+<div id="root"><div class="App container"><div class="justify-content-md-flex-start row"><div class="col-lg-1 col-sm-4"><img src="/static/logo.png" alt="logo" height="100"></div><div class="col-lg-15"><p>Professionals typically have trouble detecting heart illness owing to a high degree of ambiguity and a risk factor. This model predicts an accurate diagnosis of Ischemic Heart Diseases. The system consists of 40 machine model, each trained on a subset of the training data, and stacked with a logistic regression model.</p><form method="POST" action="/predict_CIHD" class=""><fieldset><div class="mb-3"><label class="form-label" for="age">Age</label><input name="age" placeholder="age" type="Number" id="age" class="form-control"><small id="ageHelpBlock" class="form-text text-muted">Patients age, in years [29–71] </small></div><div class="mb-3"><label class="form-label" for="sexSelect">Disabled select menu</label><select name="sex" class="form-select" id="sexSelect"><option value="1">Male</option><option value="0">Female</option></select></div><div class="mb-3"><label class="form-label" for="age">Chest pain</label><select name="cp" class="form-select" id="sexSelect"><option value="1">typical angina</option><option value="2">atypical angina</option><option value="3">non-anginal pain</option><option value="4">asymptomatic</option></select><small id="ageHelpBlock" class="form-text text-muted">4 types of chest pain (1—typical angina; 2—atypical angina; 3—nonanginal pain; 4—asymptomatic) </small></div><div class="mb-3"><label class="form-label" for="age">Rest blood pressure </label><input name="trestbps" placeholder="[94–200]" type="Number" id="Trestbps" class="form-control"><small id="TrestbpsHelpBlock" class="form-text text-muted">Resting systolic blood pressure (in mm Hg on admission to the hospital) [94–200] </small></div><div class="mb-3"><label class="form-label" for="age">Serum cholesterol </label><input name="chol" placeholder="126–564" type="Number" id="Trestbps" class="form-control"><small id="TrestbpsHelpBlock" class="form-text text-muted">Serum cholesterol in mg/dl  126–564</small></div><div class="mb-3"><label class="form-label" for="age">Fasting blood sugar </label><div class="form-check"><input name="fbs" type="checkbox" id="Fbs" class="form-check-input" value="1"><label title="" for="Fbs" class="form-check-label">is Fasting blood sugar &gt;120 mg/dl ?</label></div><small id="FbsHelpBlock" class="form-text text-muted">Fasting blood sugar &gt;120 mg/dl (0—false; 1—true) </small></div><div class="mb-3"><label class="form-label" for="age">Resting electrocardiographic results </label><select name="restecg" class="form-select" id="Restecg"><option value="0">normal</option><option value="1">ST-T wave abnormality</option><option value="2">left ventricular hypertrophy</option></select><small id="RestecgHelpBlock" class="form-text text-muted">Resting electrocardiographic results (0—normal; 1—ST-T wave abnormality; 2—left ventricular hypertrophy) </small></div><div class="mb-3"><label class="form-label" for="age">Maximum heart rate achieved </label><input name="thalach" placeholder="[71–202]" type="Number" id="Thalach" class="form-control"><small id="ThalachHelpBlock" class="form-text text-muted">Maximum heart rate achieved [71–202] </small></div><div class="mb-3"><label class="form-label" for="age">Exercise induced angina </label><div class="form-check"><input name="exang" type="checkbox" id="Exang" value="1" class="form-check-input"><label title="" for="Exang" class="form-check-label">is Exercise induced angina ?</label></div><small id="ExangHelpBlock" class="form-text text-muted">Exercise induced angina (0—false; 1—true) </small></div><div class="mb-3"><label class="form-label" for="age">ST depression induced by exercise relative to rest </label><input name="oldpeak" placeholder="[0.0–6.2]" type="Number" id="Oldpeak" class="form-control"><small id="OldpeakHelpBlock" class="form-text text-muted">ST depression induced by exercise relative to rest [0.0–6.2] </small></div><div class="mb-3"><label class="form-label" for="age">Slope of the peak exercise ST segment </label><select name="slope" class="form-select" id="Slope"><option value="1">upsloping</option><option value="2">flat</option><option value="3">downsloping</option></select><small id="SlopeHelpBlock" class="form-text text-muted">Slope of the peak exercise ST segment (1—upsloping; 2—flat; 3—downsloping) </small></div><div class="mb-3"><label class="form-label" for="age">Number of major vessels (0–3) colored by flourosopy </label><input name="ca" placeholder="[0–3]" type="Number" id="Ca" class="form-control"><small id="CaHelpBlock" class="form-text text-muted">Number of major vessels (0–3) colored by flourosopy [0–3] </small></div><div class="mb-3"><label class="form-label" for="age">Thal </label><select name="thal" class="form-select" id="Thal"><option value="3">normal</option><option value="6">fixed defect</option><option value="7">reversable defect</option></select><small id="ThalHelpBlock" class="form-text text-muted">Thal (3—normal; 6—fixed defect; 7—reversable defect) </small></div><button type="submit" class="btn btn-primary">Submit</button></fieldset></form></div></div></div></div> 
